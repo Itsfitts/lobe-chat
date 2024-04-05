@@ -1,4 +1,14 @@
 {
+  "About": "Hakkında",
+  "About us": "Hakkımızda",
+  "Contact": "İletişim",
+  "Contact us": "Bizimle iletişime geçin",
+  "Home": "Ana Sayfa",
+  "Learn more": "Daha fazla bilgi edinin",
+  "Our services": "Hizmetlerimiz",
+  "Services": "Hizmetler",
+  "Welcome": "Hoş geldiniz",
+  "Welcome to our website!": "Web sitemize hoş geldiniz!",
   "about": {
     "title": "Hakkında"
   },
@@ -31,207 +41,65 @@
     "sessionWithName": "Oturum Ayarları · {{name}}"
   },
   "llm": {
-    "Anthropic": {
+    "anthropic": {
       "endpoint": {
-        "desc": "默认地址以外，必须包含 http(s)://",
+        "desc": "除默认地址外，必须包含 http(s)://",
         "placeholder": "https://api.anthropic.com",
-        "title": "API Proxy Adresi"
+        "title": "API 代理地址"
       },
       "title": "Anthropic",
       "token": {
-        "desc": "Anthropic 的 API 密钥",
-        "placeholder": "Anthropic API 密钥",
-        "title": "API 密钥"
+        "desc": "填入来自 Anthropic 的 API Key",
+        "placeholder": "Anthropic API Key",
+        "title": "API Key"
       }
     },
-    "AzureOpenAI": {
+    "azure": {
       "azureApiVersion": {
-        "desc": "Azure'nin API sürümü, YYYY-MM-DD biçimini takip eder, [en son sürümü buradan bulabilirsiniz](https://learn.microsoft.com/tr-tr/azure/ai-services/openai/reference#chat-completions)",
-        "fetch": "Listeyi Al",
-        "title": "Azure API Sürümü"
+        "desc": "Azure 的 API 版本，遵循 YYYY-MM-DD 格式，查阅[最新版本](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)",
+        "fetch": "获取列表",
+        "title": "Azure Api Version"
       },
       "deployments": {
-        "desc": "id=name sözdizimini kullanarak dağıtım modelinizi doldurun (örneğin, dağıtım adı ve model aynıysa, yalnızca model adını doldurabilirsiniz), birden fazla model için virgül (,) kullanın",
-        "title": "Azure Dağıtımları"
+        "desc": "使用 id=name 的语法填写你的部署模型（如部署名和模型同名，可以只填写模型名称），多个模型使用逗号（,） 隔开",
+        "title": "Azure 部署模型列表"
       },
       "endpoint": {
-        "desc": "Bu değer, Azure portalındaki kaynağı kontrol ederken 'Keys and Endpoints' bölümünde bulunabilir",
+        "desc": "从 Azure 门户检查资源时，可在“密钥和终结点”部分中找到此值",
         "placeholder": "https://docs-test-001.openai.azure.com",
-        "title": "Azure API Adresi"
+        "title": "Azure API 地址"
       },
       "models": {
-        "desc": "Desteklenen modeller",
-        "title": "Model Listesi"
+        "desc": "支持的模型",
+        "title": "模型列表"
       },
-      "title": "Azure OpenAI Ayarları",
+      "title": "Azure OpenAI",
       "token": {
-        "desc": "Bu değer, Azure portalındaki kaynağı kontrol ederken 'Keys and Endpoints' bölümünde bulunabilir. KEY1 veya KEY2'yi kullanabilirsiniz",
-        "placeholder": "Azure API Anahtarı",
-        "title": "API Anahtarı"
+        "desc": "从 Azure 门户检查资源时，可在“密钥和终结点”部分中找到此值。 可以使用 KEY1 或 KEY2",
+        "placeholder": "Azure API Key",
+        "title": "API Key"
       }
     },
-    "Bedrock": {
+    "bedrock": {
       "accessKeyId": {
-        "desc": "Aws Access Key Id'sini girin",
+        "desc": "填入Aws Access Key Id",
         "placeholder": "Aws Access Key Id",
         "title": "Aws Access Key Id"
       },
       "checker": {
-        "desc": "AccessKeyId / SecretAccessKey'in doğru şekilde doldurulup doldurulmadığını test eder"
+        "desc": "测试 AccessKeyId / SecretAccessKey 是否填写正确"
       },
       "region": {
-        "desc": "Aws Bölgesini girin",
-        "placeholder": "Aws Bölgesi",
-        "title": "Aws Bölgesi"
+        "desc": "填入 Aws Region",
+        "placeholder": "Aws Region",
+        "title": "Aws Region"
       },
       "secretAccessKey": {
-        "desc": "Aws Secret Access Key'i girin",
+        "desc": "填入 Aws Secret Access Key",
         "placeholder": "Aws Secret Access Key",
         "title": "Aws Secret Access Key"
       },
       "title": "Bedrock"
-    },
-    "Google": {
-      "title": "Google",
-      "token": {
-        "desc": "Google'dan alınan API Anahtarını girin",
-        "placeholder": "Google API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "Groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "Groq'dan alınan API Anahtarını girin",
-        "placeholder": "Groq API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "Mistral": {
-      "title": "Mistral AI",
-      "token": {
-        "desc": "Mistral AI 的 API 密钥",
-        "placeholder": "Mistral AI API 密钥",
-        "title": "API 密钥"
-      }
-    },
-    "Moonshot": {
-      "title": "月球背面",
-      "token": {
-        "desc": "Moonshot AI 的 API 密钥",
-        "placeholder": "Moonshot AI API 密钥",
-        "title": "API 密钥"
-      }
-    },
-    "Ollama": {
-      "checker": {
-        "desc": "Proxy adresinin doğru şekilde doldurulup doldurulmadığını test edin"
-      },
-      "customModelName": {
-        "desc": "Özel model ekleyin, birden fazla model virgül (,) ile ayrılır",
-        "placeholder": "vicuna,llama,codellama,llama2:13b-text",
-        "title": "Özel Model Adı"
-      },
-      "endpoint": {
-        "desc": "Ollama arayüzü proxy adresini girin, yerel olarak özel bir adres belirtilmemişse boş bırakın",
-        "placeholder": "http://127.0.0.1:11434/v1",
-        "title": "Proxy Adresi"
-      },
-      "title": "Ollama"
-    },
-    "OpenAI": {
-      "azureApiVersion": {
-        "desc": "Azure için API sürümü, YYYY-MM-DD formatını takip eder, [en son sürümü kontrol edin](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference#chat-completions)",
-        "fetch": "Listeyi Al",
-        "title": "Azure API Sürümü"
-      },
-      "customModelName": {
-        "desc": "Özel modeller ekleyin, birden fazla modeli virgülle (,) ayırarak yazın",
-        "placeholder": "model1,model2,model3",
-        "title": "Özel Model Adı"
-      },
-      "endpoint": {
-        "desc": "Varsayılan adresin yanı sıra http(s):// içermelidir",
-        "placeholder": "https://api.openai.com/v1",
-        "title": "API Proxy Adresi"
-      },
-      "models": {
-        "count": "Toplam {{count}} modeli destekler",
-        "desc": "Desteklenen modeller",
-        "fetch": "Model Listesini Al",
-        "notSupport": "Azure OpenAI şu anda model listesini görüntülemeyi desteklemiyor",
-        "notSupportTip": "Dağıtım adının model adıyla eşleştiğinden emin olmalısınız",
-        "refetch": "Model Listesini Yeniden Al",
-        "title": "Model Listesi"
-      },
-      "title": "OpenAI Ayarları",
-      "token": {
-        "desc": "Kendi OpenAI Anahtarınızı kullanın",
-        "placeholder": "OpenAI API Anahtarı",
-        "title": "API Anahtarı"
-      },
-      "useAzure": {
-        "desc": "Azure tarafından sağlanan OpenAI hizmetlerini kullanın",
-        "fetch": "Listeyi Al",
-        "serverConfig": "Yönetici, sunucu tarafında Azure OpenAI'yi etkinleştirdi ve değiştirme yasağı getirdi",
-        "title": "Azure OpenAI"
-      }
-    },
-    "OpenRouter": {
-      "checker": {
-        "desc": "Proxy adresinin doğru şekilde doldurulup doldurulmadığını test edin"
-      },
-      "customModelName": {
-        "desc": "Özel modeller ekleyin, birden fazla modeli virgülle (,) ayırarak yazın",
-        "placeholder": "model1,model2,model3",
-        "title": "Özel Model Adı"
-      },
-      "title": "OpenRouter",
-      "token": {
-        "desc": "OpenRouter AI'dan gelen API Anahtarı'nı girin",
-        "placeholder": "OpenRouter AI API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "TogetherAI": {
-      "checker": {
-        "desc": "Proxy adresinin doğru şekilde doldurulup doldurulmadığını test edin"
-      },
-      "customModelName": {
-        "desc": "Özel modeller ekleyin, birden fazla modeli virgülle (,) ayırarak yazın",
-        "placeholder": "model1,model2,model3",
-        "title": "Özel Model Adı"
-      },
-      "title": "TogetherAI",
-      "token": {
-        "desc": "TogetherAI AI'dan gelen API Anahtarı'nı girin",
-        "placeholder": "TogetherAI AI API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "Perplexity": {
-      "title": "Perplexity",
-      "token": {
-        "desc": "Perplexity AI'dan gelen API Anahtarı'nı girin",
-        "placeholder": "Perplexity AI API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "ZeroOne": {
-      "title": "01.AI SıfırBir Her Şey",
-      "token": {
-        "desc": "01.AI SıfırBir Her Şey'den API Anahtarı girin",
-        "placeholder": "01.AI SıfırBir Her Şey API Anahtarı",
-        "title": "API Anahtarı"
-      }
-    },
-    "Zhipu": {
-      "title": "Zhipu AI",
-      "token": {
-        "desc": "Zhipu'dan alınan API Anahtarını girin",
-        "placeholder": "Zhipu API Anahtarı",
-        "title": "API Anahtarı"
-      }
     },
     "checker": {
       "button": "Kontrol Et",
@@ -239,7 +107,149 @@
       "pass": "Kontrol Başarılı",
       "title": "Bağlantı Kontrolü"
     },
-    "waitingForMore": "Daha fazla model eklenmesi planlanıyor ✨"
+    "google": {
+      "title": "Google",
+      "token": {
+        "desc": "填入来自 Google 的 API Key",
+        "placeholder": "Google API Key",
+        "title": "API Key"
+      }
+    },
+    "groq": {
+      "title": "Groq",
+      "token": {
+        "desc": "填入来自 Groq 的 API Key",
+        "placeholder": "Groq API Key",
+        "title": "API Key"
+      }
+    },
+    "mistral": {
+      "title": "Mistral AI",
+      "token": {
+        "desc": "填入来自 Mistral AI 的 API Key",
+        "placeholder": "Mistral AI API Key",
+        "title": "API Key"
+      }
+    },
+    "moonshot": {
+      "title": "月之暗面",
+      "token": {
+        "desc": "填入来自 Moonshot AI 的 API Key",
+        "placeholder": "Moonshot AI API Key",
+        "title": "API Key"
+      }
+    },
+    "ollama": {
+      "checker": {
+        "desc": "测试代理地址是否正确填写"
+      },
+      "customModelName": {
+        "desc": "增加自定义模型，多个模型使用逗号（,）隔开",
+        "placeholder": "vicuna,llava,codellama,llama2:13b-text",
+        "title": "自定义模型名称"
+      },
+      "endpoint": {
+        "desc": "填入 Ollama 接口代理地址，本地未额外指定可留空",
+        "placeholder": "http://127.0.0.1:11434/v1",
+        "title": "接口代理地址"
+      },
+      "title": "Ollama"
+    },
+    "openai": {
+      "azureApiVersion": {
+        "desc": "Azure 的 API 版本，遵循 YYYY-MM-DD 格式，查阅[最新版本](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)",
+        "fetch": "获取列表",
+        "title": "Azure Api Version"
+      },
+      "customModelName": {
+        "desc": "增加自定义模型，多个模型使用逗号（,） 隔开",
+        "placeholder": "model1,model2,model3",
+        "title": "自定义模型名称"
+      },
+      "endpoint": {
+        "desc": "除默认地址外，必须包含 http(s)://",
+        "placeholder": "https://api.openai.com/v1",
+        "title": "接口代理地址"
+      },
+      "models": {
+        "count": "共支持 {{count}} 个模型",
+        "desc": "支持的模型",
+        "fetch": "获取模型列表",
+        "notSupport": "Azure OpenAI 暂不支持查看模型列表",
+        "notSupportTip": "你需要自行确保部署名称与模型名称一致",
+        "refetch": "重新获取模型列表",
+        "title": "模型列表"
+      },
+      "title": "OpenAI",
+      "token": {
+        "desc": "使用自己的 OpenAI Key",
+        "placeholder": "OpenAI API Key",
+        "title": "OpenAI API Key"
+      },
+      "useAzure": {
+        "desc": "使用 Azure 提供的 OpenAI 服务",
+        "fetch": "获取列表",
+        "serverConfig": "管理员在服务端配置开启了 Azure OpenAI，禁止切换",
+        "title": "Azure OpenAI"
+      }
+    },
+    "openrouter": {
+      "checker": {
+        "desc": "测试代理地址是否正确填写"
+      },
+      "customModelName": {
+        "desc": "增加自定义模型，多个模型使用逗号（,）隔开",
+        "placeholder": "mistralai/mistral-7b-instruct:free,openchat/openchat-7b:free",
+        "title": "自定义模型名称"
+      },
+      "title": "OpenRouter",
+      "token": {
+        "desc": "填入来自 OpenRouter AI 的 API Key",
+        "placeholder": "OpenRouter AI API Key",
+        "title": "API Key"
+      }
+    },
+    "perplexity": {
+      "title": "Perplexity",
+      "token": {
+        "desc": "填入来自 Perplexity AI 的 API Key",
+        "placeholder": "Perplexity AI API Key",
+        "title": "API Key"
+      }
+    },
+    "togetherai": {
+      "checker": {
+        "desc": "测试代理地址是否正确填写"
+      },
+      "customModelName": {
+        "desc": "增加自定义模型，多个模型使用逗号（,）隔开",
+        "placeholder": "togethercomputer/Llama-2-7B-32K-Instruct,teknium/OpenHermes-2-Mistral-7B",
+        "title": "自定义模型名称"
+      },
+      "title": "TogetherAI",
+      "token": {
+        "desc": "填入来自 TogetherAI AI 的 API Key",
+        "placeholder": "TogetherAI AI API Key",
+        "title": "API Key"
+      }
+    },
+    "waitingForMore": "Daha fazla model eklenmesi planlanıyor ✨",
+    "zeroone": {
+      "title": "01.AI 零一万物",
+      "token": {
+        "desc": "填入来自 01.AI 零一万物的 API Key",
+        "placeholder": "01.AI 零一万物 API Key",
+        "title": "API Key"
+      }
+    },
+    "zhipu": {
+      "title": "智谱",
+      "token": {
+        "desc": "填入来自智谱的 API Key",
+        "placeholder": "Zhipu API Key",
+        "title": "API Key"
+      }
+    }
   },
   "ollama": {
     "download": {

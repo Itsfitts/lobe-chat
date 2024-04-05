@@ -25,37 +25,39 @@
       "title": "Réinitialiser tous les paramètres"
     }
   },
+  "goodbye": "Au revoir",
   "header": {
     "global": "Paramètres globaux",
     "session": "Paramètres de session",
     "sessionWithName": "Paramètres de session · {{name}}"
   },
+  "hello": "Bonjour",
   "llm": {
-    "Anthropic": {
+    "anthropic": {
       "endpoint": {
-        "desc": "En dehors de l'adresse par défaut, doit inclure http(s)://",
+        "desc": "除默认地址外，必须包含 http(s)://",
         "placeholder": "https://api.anthropic.com",
         "title": "Adresse de l'API proxy"
       },
       "title": "Anthropic",
       "token": {
-        "desc": "Entrez votre clé API Anthropic",
-        "placeholder": "Clé API Anthropic",
+        "desc": "Remplissez la clé API d'Anthropic",
+        "placeholder": "Clé API d'Anthropic",
         "title": "Clé API"
       }
     },
-    "AzureOpenAI": {
+    "azure": {
       "azureApiVersion": {
-        "desc": "Version de l'API Azure, au format YYYY-MM-DD. Consultez la [dernière version](https://learn.microsoft.com/fr-fr/azure/ai-services/openai/reference#chat-completions)",
-        "fetch": "Récupérer la liste",
+        "desc": "Azure's API version, follow the format YYYY-MM-DD, check the [latest version](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)",
+        "fetch": "Obtenir la liste",
         "title": "Version de l'API Azure"
       },
       "deployments": {
-        "desc": "Utilisez la syntaxe id=nom pour spécifier vos déploiements de modèle (par exemple, si le nom du déploiement est identique au nom du modèle, vous pouvez simplement spécifier le nom du modèle). Utilisez une virgule (,) pour séparer plusieurs modèles",
+        "desc": "Utilisez la syntaxe id=nom pour spécifier vos déploiements de modèle (si le nom du déploiement est identique au nom du modèle, vous pouvez simplement spécifier le nom du modèle), séparez les modèles multiples par des virgules (,)",
         "title": "Liste des déploiements Azure"
       },
       "endpoint": {
-        "desc": "Lors de la vérification des ressources dans le portail Azure, vous pouvez trouver cette valeur dans la section \"Clés et points de terminaison\"",
+        "desc": "Lors de l'inspection des ressources depuis le portail Azure, vous pouvez trouver cette valeur dans la section \"Clés et points de terminaison\"",
         "placeholder": "https://docs-test-001.openai.azure.com",
         "title": "Adresse de l'API Azure"
       },
@@ -63,175 +65,33 @@
         "desc": "Modèles pris en charge",
         "title": "Liste des modèles"
       },
-      "title": "Paramètres Azure OpenAI",
+      "title": "Azure OpenAI",
       "token": {
-        "desc": "Lors de la vérification des ressources dans le portail Azure, vous pouvez trouver cette valeur dans la section \"Clés et points de terminaison\". Vous pouvez utiliser KEY1 ou KEY2",
+        "desc": "Lors de l'inspection des ressources depuis le portail Azure, vous pouvez trouver cette valeur dans la section \"Clés et points de terminaison\". Vous pouvez utiliser la clé KEY1 ou KEY2",
         "placeholder": "Clé API Azure",
         "title": "Clé API"
       }
     },
-    "Bedrock": {
+    "bedrock": {
       "accessKeyId": {
-        "desc": "Entrez l'identifiant de clé d'accès AWS",
+        "desc": "Remplissez l'identifiant de clé d'accès AWS",
         "placeholder": "Identifiant de clé d'accès AWS",
         "title": "Identifiant de clé d'accès AWS"
       },
       "checker": {
-        "desc": "Vérifie si l'AccessKeyId / SecretAccessKey est correctement renseigné"
+        "desc": "Vérifiez si l'AccessKeyId / SecretAccessKey est correctement rempli"
       },
       "region": {
-        "desc": "Entrez la région AWS",
+        "desc": "Remplissez la région AWS",
         "placeholder": "Région AWS",
         "title": "Région AWS"
       },
       "secretAccessKey": {
-        "desc": "Entrez la clé d'accès secrète AWS",
+        "desc": "Remplissez la clé d'accès secrète AWS",
         "placeholder": "Clé d'accès secrète AWS",
         "title": "Clé d'accès secrète AWS"
       },
       "title": "Bedrock"
-    },
-    "Google": {
-      "title": "Google",
-      "token": {
-        "desc": "Entrez la clé API de Google",
-        "placeholder": "Clé API Google",
-        "title": "Clé API"
-      }
-    },
-    "Groq": {
-      "title": "Groq",
-      "token": {
-        "desc": "Entrez la clé API de Groq",
-        "placeholder": "Clé API Groq",
-        "title": "Clé API"
-      }
-    },
-    "Mistral": {
-      "title": "Mistral AI",
-      "token": {
-        "desc": "Veuillez saisir la clé API de Mistral AI",
-        "placeholder": "Clé API Mistral AI",
-        "title": "Clé API"
-      }
-    },
-    "Moonshot": {
-      "title": "月球着陆",
-      "token": {
-        "desc": "请输入来自Moonshot AI的API密钥",
-        "placeholder": "Moonshot AI API密钥",
-        "title": "API密钥"
-      }
-    },
-    "Ollama": {
-      "checker": {
-        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
-      },
-      "customModelName": {
-        "desc": "Ajoutez un modèle personnalisé, séparez les modèles multiples par des virgules (,)",
-        "placeholder": "vicuna,llava,codellama,llama2:13b-text",
-        "title": "Nom du modèle personnalisé"
-      },
-      "endpoint": {
-        "desc": "Entrez l'adresse du proxy de l'interface Ollama, laissez vide si non spécifié localement",
-        "placeholder": "http://127.0.0.1:11434/v1",
-        "title": "Adresse du proxy de l'interface"
-      },
-      "title": "Ollama"
-    },
-    "OpenAI": {
-      "azureApiVersion": {
-        "desc": "Version de l'API Azure, au format YYYY-MM-DD, consultez la [dernière version](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)",
-        "fetch": "Obtenir la liste",
-        "title": "Version de l'API Azure"
-      },
-      "customModelName": {
-        "desc": "Ajoutez des modèles personnalisés, séparés par des virgules (,)",
-        "placeholder": "modèle1,modèle2,modèle3",
-        "title": "Nom du modèle personnalisé"
-      },
-      "endpoint": {
-        "desc": "En dehors de l'adresse par défaut, doit inclure http(s)://",
-        "placeholder": "https://api.openai.com/v1",
-        "title": "Adresse du proxy de l'interface"
-      },
-      "models": {
-        "count": "Au total, {{count}} modèles sont pris en charge",
-        "desc": "Modèles pris en charge",
-        "fetch": "Obtenir la liste des modèles",
-        "notSupport": "Azure OpenAI ne prend pas en charge la visualisation de la liste des modèles pour le moment",
-        "notSupportTip": "Vous devez vous assurer que le nom du déploiement correspond au nom du modèle",
-        "refetch": "Obtenir à nouveau la liste des modèles",
-        "title": "Liste des modèles"
-      },
-      "title": "Paramètres OpenAI",
-      "token": {
-        "desc": "Utilisez votre propre clé OpenAI",
-        "placeholder": "Clé API OpenAI",
-        "title": "Clé API"
-      },
-      "useAzure": {
-        "desc": "Utilisez le service OpenAI fourni par Azure",
-        "fetch": "Obtenir la liste",
-        "serverConfig": "L'administrateur a activé Azure OpenAI côté serveur, le changement est interdit",
-        "title": "Azure OpenAI"
-      }
-    },
-    "OpenRouter": {
-      "checker": {
-        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
-      },
-      "customModelName": {
-        "desc": "Ajoutez un modèle personnalisé, séparez les modèles multiples par des virgules (,)",
-        "placeholder": "mistralai/mistral-7b-instruct:gratuit,openchat/openchat-7b:gratuit",
-        "title": "Nom du modèle personnalisé"
-      },
-      "title": "OpenRouter",
-      "token": {
-        "desc": "Entrez la clé API de OpenRouter AI",
-        "placeholder": "Clé API OpenRouter AI",
-        "title": "Clé API"
-      }
-    },
-    "TogetherAI": {
-      "checker": {
-        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
-      },
-      "customModelName": {
-        "desc": "Ajoutez un modèle personnalisé, séparez les modèles multiples par des virgules (,)",
-        "placeholder": "mistralai/mistral-7b-instruct:gratuit,openchat/openchat-7b:gratuit",
-        "title": "Nom du modèle personnalisé"
-      },
-      "title": "TogetherAI",
-      "token": {
-        "desc": "Entrez la clé API de TogetherAI AI",
-        "placeholder": "Clé API TogetherAI AI",
-        "title": "Clé API"
-      }
-    },
-    "Perplexity": {
-      "title": "Perplexity",
-      "token": {
-        "desc": "Entrez la clé API de Perplexity AI",
-        "placeholder": "Clé API Perplexity AI",
-        "title": "Clé API"
-      }
-    },
-    "ZeroOne": {
-      "title": "01.AI ZéroUn Tout-en-un",
-      "token": {
-        "desc": "Entrez la clé API de 01.AI ZéroUn Tout-en-un",
-        "placeholder": "Clé API 01.AI ZéroUn Tout-en-un",
-        "title": "Clé API"
-      }
-    },
-    "Zhipu": {
-      "title": "智谱",
-      "token": {
-        "desc": "Entrez la clé API de Zhipu",
-        "placeholder": "Clé API Zhipu",
-        "title": "Clé API"
-      }
     },
     "checker": {
       "button": "Vérifier",
@@ -239,8 +99,151 @@
       "pass": "Vérification réussie",
       "title": "Vérification de la connectivité"
     },
-    "waitingForMore": "Plus de modèles sont en cours de <1>planification pour être ajoutés</1>, restez à l'écoute ✨"
+    "google": {
+      "title": "Google",
+      "token": {
+        "desc": "Remplissez la clé API de Google",
+        "placeholder": "Clé API de Google",
+        "title": "Clé API"
+      }
+    },
+    "groq": {
+      "title": "Groq",
+      "token": {
+        "desc": "Remplissez la clé API de Groq",
+        "placeholder": "Clé API de Groq",
+        "title": "Clé API"
+      }
+    },
+    "mistral": {
+      "title": "Mistral AI",
+      "token": {
+        "desc": "Remplissez la clé API de Mistral AI",
+        "placeholder": "Clé API de Mistral AI",
+        "title": "Clé API"
+      }
+    },
+    "moonshot": {
+      "title": "Côté obscur de la lune",
+      "token": {
+        "desc": "Remplissez la clé API de Moonshot AI",
+        "placeholder": "Clé API de Moonshot AI",
+        "title": "Clé API"
+      }
+    },
+    "ollama": {
+      "checker": {
+        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
+      },
+      "customModelName": {
+        "desc": "Ajoutez des modèles personnalisés, séparez les modèles multiples par des virgules (,)",
+        "placeholder": "vicuna,llava,codellama,llama2:13b-text",
+        "title": "Nom du modèle personnalisé"
+      },
+      "endpoint": {
+        "desc": "Remplissez l'adresse du proxy Ollama, laissez vide si non spécifié localement",
+        "placeholder": "http://127.0.0.1:11434/v1",
+        "title": "Adresse du proxy"
+      },
+      "title": "Ollama"
+    },
+    "openai": {
+      "azureApiVersion": {
+        "desc": "Azure's API version, follow the format YYYY-MM-DD, check the [latest version](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)",
+        "fetch": "Obtenir la liste",
+        "title": "Version de l'API Azure"
+      },
+      "customModelName": {
+        "desc": "Ajoutez des modèles personnalisés, séparez les modèles multiples par des virgules (,)",
+        "placeholder": "modèle1,modèle2,modèle3",
+        "title": "Nom du modèle personnalisé"
+      },
+      "endpoint": {
+        "desc": "除默认地址外，必须包含 http(s)://",
+        "placeholder": "https://api.openai.com/v1",
+        "title": "Adresse du proxy"
+      },
+      "models": {
+        "count": "共支持 {{count}} 个模型",
+        "desc": "Modèles pris en charge",
+        "fetch": "Obtenir la liste des modèles",
+        "notSupport": "Azure OpenAI ne prend pas en charge la visualisation de la liste des modèles",
+        "notSupportTip": "Vous devez vous assurer que le nom du déploiement correspond au nom du modèle",
+        "refetch": "Recharger la liste des modèles",
+        "title": "Liste des modèles"
+      },
+      "title": "OpenAI",
+      "token": {
+        "desc": "Utilisez votre propre clé OpenAI",
+        "placeholder": "Clé API OpenAI",
+        "title": "Clé API OpenAI"
+      },
+      "useAzure": {
+        "desc": "Utilisez le service OpenAI fourni par Azure",
+        "fetch": "Obtenir la liste",
+        "serverConfig": "L'administrateur a configuré Azure OpenAI côté serveur, le changement est interdit",
+        "title": "Azure OpenAI"
+      }
+    },
+    "openrouter": {
+      "checker": {
+        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
+      },
+      "customModelName": {
+        "desc": "Ajoutez des modèles personnalisés, séparez les modèles multiples par des virgules (,)",
+        "placeholder": "mistralai/mistral-7b-instruct:free,openchat/openchat-7b:free",
+        "title": "Nom du modèle personnalisé"
+      },
+      "title": "OpenRouter",
+      "token": {
+        "desc": "Remplissez la clé API de OpenRouter AI",
+        "placeholder": "Clé API de OpenRouter AI",
+        "title": "Clé API"
+      }
+    },
+    "perplexity": {
+      "title": "Perplexité",
+      "token": {
+        "desc": "Remplissez la clé API de Perplexity AI",
+        "placeholder": "Clé API de Perplexity AI",
+        "title": "Clé API"
+      }
+    },
+    "togetherai": {
+      "checker": {
+        "desc": "Vérifiez si l'adresse du proxy est correctement remplie"
+      },
+      "customModelName": {
+        "desc": "Ajoutez des modèles personnalisés, séparez les modèles multiples par des virgules (,)",
+        "placeholder": "togethercomputer/Llama-2-7B-32K-Instruct,teknium/OpenHermes-2-Mistral-7B",
+        "title": "Nom du modèle personnalisé"
+      },
+      "title": "TogetherAI",
+      "token": {
+        "desc": "Remplissez la clé API de TogetherAI AI",
+        "placeholder": "Clé API de TogetherAI AI",
+        "title": "Clé API"
+      }
+    },
+    "waitingForMore": "Plus de modèles sont en cours de <1>planification pour être ajoutés</1>, restez à l'écoute ✨",
+    "zeroone": {
+      "title": "01.AI Zéro un tout",
+      "token": {
+        "desc": "Remplissez la clé API de 01.AI Zéro un tout",
+        "placeholder": "Clé API de 01.AI Zéro un tout",
+        "title": "Clé API"
+      }
+    },
+    "zhipu": {
+      "title": "Zhipu",
+      "token": {
+        "desc": "Remplissez la clé API de Zhipu",
+        "placeholder": "Clé API de Zhipu",
+        "title": "Clé API"
+      }
+    }
   },
+  "no": "Non",
   "ollama": {
     "download": {
       "desc": "Ollama est en train de télécharger ce modèle. Veuillez ne pas fermer cette page. Le téléchargement reprendra là où il s'est arrêté en cas de reprise.",
@@ -507,6 +510,7 @@
     "sync": "Synchronisation cloud",
     "tts": "Service vocal"
   },
+  "thank_you": "Merci",
   "tools": {
     "builtins": {
       "groupName": "Intégré"
@@ -519,5 +523,7 @@
       "store": "Boutique de plugins"
     },
     "title": "Outils supplémentaires"
-  }
+  },
+  "welcome": "Bienvenue",
+  "yes": "Oui"
 }

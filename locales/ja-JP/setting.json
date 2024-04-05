@@ -1,4 +1,9 @@
 {
+  "About": "約",
+  "Contact": "連絡先",
+  "Home": "ホーム",
+  "Services": "サービス",
+  "Welcome": "ようこそ",
   "about": {
     "title": "について"
   },
@@ -31,31 +36,31 @@
     "sessionWithName": "セッション設定 · {{name}}"
   },
   "llm": {
-    "Anthropic": {
+    "anthropic": {
       "endpoint": {
         "desc": "デフォルトのアドレスに加えて、http(s)://を含める必要があります",
         "placeholder": "https://api.anthropic.com",
-        "title": "APIプロキシアドレス"
+        "title": "API プロキシアドレス"
       },
       "title": "Anthropic",
       "token": {
-        "desc": "Anthropic の API キーを入力してください",
+        "desc": "Anthropic から取得した API キーを入力してください",
         "placeholder": "Anthropic API キー",
         "title": "API キー"
       }
     },
-    "AzureOpenAI": {
+    "azure": {
       "azureApiVersion": {
-        "desc": "AzureのAPIバージョン。YYYY-MM-DD形式に従う。[最新バージョン](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)を参照",
+        "desc": "Azure の API バージョン。YYYY-MM-DD 形式に従う。[最新バージョン](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)を参照",
         "fetch": "リストを取得",
-        "title": "Azure APIバージョン"
+        "title": "Azure API バージョン"
       },
       "deployments": {
-        "desc": "id=nameの構文を使用して、デプロイモデルを記入します（デプロイ名とモデルが同じ場合、モデル名のみを記入できます）。複数のモデルは、カンマ（,）で区切ります",
-        "title": "Azureデプロイリスト"
+        "desc": "id=name の形式でデプロイモデルを記入してください（例：デプロイ名とモデル名が同じ場合、モデル名のみ記入することができます）。複数のモデルはコンマ（,）で区切ってください",
+        "title": "Azure デプロイモデルリスト"
       },
       "endpoint": {
-        "desc": "Azure ポータルでリソースを確認すると、この値は「キーとエンドポイント」セクションで見つけることができます",
+        "desc": "Azure ポータルでリソースを確認する際に、\"キーとエンドポイント\"セクションでこの値を見つけることができます",
         "placeholder": "https://docs-test-001.openai.azure.com",
         "title": "Azure API アドレス"
       },
@@ -63,123 +68,129 @@
         "desc": "サポートされているモデル",
         "title": "モデルリスト"
       },
-      "title": "Azure OpenAI 設定",
+      "title": "Azure OpenAI",
       "token": {
-        "desc": "Azure ポータルでリソースを確認すると、この値は「キーとエンドポイント」セクションで見つけることができます。KEY1 または KEY2 を使用できます",
+        "desc": "Azure ポータルでリソースを確認する際に、\"キーとエンドポイント\"セクションでこの値を見つけることができます。KEY1 または KEY2 を使用することができます",
         "placeholder": "Azure API キー",
         "title": "API キー"
       }
     },
-    "Bedrock": {
+    "bedrock": {
       "accessKeyId": {
-        "desc": "Aws Access Key Idを入力",
+        "desc": "Aws Access Key Id を入力してください",
         "placeholder": "Aws Access Key Id",
         "title": "Aws Access Key Id"
       },
       "checker": {
-        "desc": "AccessKeyId / SecretAccessKeyが正しく記入されているかをテスト"
+        "desc": "AccessKeyId / SecretAccessKey が正しく記入されているかをテストします"
       },
       "region": {
-        "desc": "Aws Regionを入力",
-        "placeholder": "Aws Region",
-        "title": "Aws Region"
+        "desc": "Aws リージョンを入力してください",
+        "placeholder": "Aws リージョン",
+        "title": "Aws リージョン"
       },
       "secretAccessKey": {
-        "desc": "Aws Secret Access Keyを入力",
+        "desc": "Aws Secret Access Key を入力してください",
         "placeholder": "Aws Secret Access Key",
         "title": "Aws Secret Access Key"
       },
       "title": "Bedrock"
     },
-    "Google": {
+    "checker": {
+      "button": "チェック",
+      "desc": "APIキーとプロキシアドレスが正しく記入されているかをテスト",
+      "pass": "チェック合格",
+      "title": "接続性チェック"
+    },
+    "google": {
       "title": "Google",
       "token": {
-        "desc": "Googleから取得したAPIキーを入力",
-        "placeholder": "Google API Key",
-        "title": "APIキー"
+        "desc": "Google から取得した API キーを入力してください",
+        "placeholder": "Google API キー",
+        "title": "API キー"
       }
     },
-    "Groq": {
+    "groq": {
       "title": "Groq",
       "token": {
-        "desc": "Groq からの API キーを入力してください",
+        "desc": "Groq から取得した API キーを入力してください",
         "placeholder": "Groq API キー",
-        "title": " API キー"
+        "title": "API キー"
       }
     },
-    "Mistral": {
+    "mistral": {
       "title": "Mistral AI",
       "token": {
-        "desc": "Mistral AI からの API キーを入力してください",
+        "desc": "Mistral AI から取得した API キーを入力してください",
         "placeholder": "Mistral AI API キー",
         "title": "API キー"
       }
     },
-    "Moonshot": {
+    "moonshot": {
       "title": "月の裏側",
       "token": {
-        "desc": "Moonshot AI からの API キーを入力してください",
+        "desc": "Moonshot AI から取得した API キーを入力してください",
         "placeholder": "Moonshot AI API キー",
         "title": "API キー"
       }
     },
-    "Ollama": {
+    "ollama": {
       "checker": {
-        "desc": "プロキシアドレスが正しく入力されているかをテストします"
+        "desc": "プロキシアドレスが正しく記入されているかをテストします"
       },
       "customModelName": {
         "desc": "カスタムモデルを追加します。複数のモデルはコンマ（,）で区切ってください",
-        "placeholder": "ビクーニャ、リャマ、コードリャマ、リャマ2:13b-テキスト",
+        "placeholder": "vicuna,llava,codellama,llama2:13b-text",
         "title": "カスタムモデル名"
       },
       "endpoint": {
-        "desc": "Ollama インターフェースプロキシアドレスを入力します。ローカルで追加指定がない場合は空白のままにしてください",
+        "desc": "Ollama インターフェースプロキシアドレスを入力してください。ローカルで追加の指定がない場合は空白のままにしてください",
         "placeholder": "http://127.0.0.1:11434/v1",
         "title": "インターフェースプロキシアドレス"
       },
       "title": "Ollama"
     },
-    "OpenAI": {
+    "openai": {
       "azureApiVersion": {
-        "desc": "Azure の API バージョンは YYYY-MM-DD 形式に従い、[最新バージョン](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)を参照してください",
+        "desc": "Azure の API バージョン。YYYY-MM-DD 形式に従う。[最新バージョン](https://learn.microsoft.com/zh-cn/azure/ai-services/openai/reference#chat-completions)を参照",
         "fetch": "リストを取得",
         "title": "Azure API バージョン"
       },
       "customModelName": {
-        "desc": "カスタムモデルを追加し、複数のモデルはカンマ（,）で区切って使用します",
+        "desc": "カスタムモデルを追加します。複数のモデルはコンマ（,）で区切ってください",
         "placeholder": "model1,model2,model3",
         "title": "カスタムモデル名"
       },
       "endpoint": {
-        "desc": "デフォルトのアドレス以外に、http(s):// を含める必要があります",
+        "desc": "デフォルトのアドレスに加えて、http(s)://を含める必要があります",
         "placeholder": "https://api.openai.com/v1",
         "title": "インターフェースプロキシアドレス"
       },
       "models": {
-        "count": "{{count}} 個のモデルをサポート",
+        "count": "合計 {{count}} 個のモデルがサポートされています",
         "desc": "サポートされているモデル",
         "fetch": "モデルリストを取得",
         "notSupport": "Azure OpenAI はモデルリストの表示をサポートしていません",
-        "notSupportTip": "デプロイ名とモデル名が一致することを確認する必要があります",
+        "notSupportTip": "デプロイ名とモデル名が一致していることを自己確認する必要があります",
         "refetch": "モデルリストを再取得",
         "title": "モデルリスト"
       },
-      "title": "OpenAI 設定",
+      "title": "OpenAI",
       "token": {
-        "desc": "独自の OpenAI キーを使用します",
+        "desc": "独自の OpenAI キーを使用してください",
         "placeholder": "OpenAI API キー",
-        "title": "API キー"
+        "title": "OpenAI API キー"
       },
       "useAzure": {
-        "desc": "Azure の提供する OpenAI サービスを使用します",
+        "desc": "Azure が提供する OpenAI サービスを使用します",
         "fetch": "リストを取得",
-        "serverConfig": "管理者はサーバー側で Azure OpenAI を有効にし、切り替えを禁止しています",
-        "title": "Azure OpenAI を使用"
+        "serverConfig": "サーバーで Azure OpenAI を設定しているため、切り替えは禁止されています",
+        "title": "Azure OpenAI"
       }
     },
-    "OpenRouter": {
+    "openrouter": {
       "checker": {
-        "desc": "プロキシアドレスが正しく入力されているかをテストします"
+        "desc": "プロキシアドレスが正しく記入されているかをテストします"
       },
       "customModelName": {
         "desc": "カスタムモデルを追加します。複数のモデルはコンマ（,）で区切ってください",
@@ -188,58 +199,52 @@
       },
       "title": "OpenRouter",
       "token": {
-        "desc": "OpenRouter AIから取得したAPIキーを入力してください",
-        "placeholder": "OpenRouter AI APIキー",
-        "title": "APIキー"
+        "desc": "OpenRouter AI から取得した API キーを入力してください",
+        "placeholder": "OpenRouter AI API キー",
+        "title": "API キー"
       }
     },
-    "TogetherAI": {
-      "checker": {
-        "desc": "プロキシアドレスが正しく入力されているかをテストします"
-      },
-      "customModelName": {
-        "desc": "カスタムモデルを追加します。複数のモデルはコンマ（,）で区切ってください",
-        "placeholder": "mistralai/mistral-7b-instruct:free,openchat/openchat-7b:free",
-        "title": "カスタムモデル名"
-      },
-      "title": "TogetherAI",
-      "token": {
-        "desc": "TogetherAI AIから取得したAPIキーを入力してください",
-        "placeholder": "TogetherAI AI APIキー",
-        "title": "APIキー"
-      }
-    },
-    "Perplexity": {
+    "perplexity": {
       "title": "Perplexity",
       "token": {
-        "desc": "Perplexity AI の API キーを入力してください",
+        "desc": "Perplexity AI から取得した API キーを入力してください",
         "placeholder": "Perplexity AI API キー",
         "title": "API キー"
       }
     },
-    "ZeroOne": {
+    "togetherai": {
+      "checker": {
+        "desc": "プロキシアドレスが正しく記入されているかをテストします"
+      },
+      "customModelName": {
+        "desc": "カスタムモデルを追加します。複数のモデルはコンマ（,）で区切ってください",
+        "placeholder": "togethercomputer/Llama-2-7B-32K-Instruct,teknium/OpenHermes-2-Mistral-7B",
+        "title": "カスタムモデル名"
+      },
+      "title": "TogetherAI",
+      "token": {
+        "desc": "TogetherAI AI から取得した API キーを入力してください",
+        "placeholder": "TogetherAI AI API キー",
+        "title": "API キー"
+      }
+    },
+    "waitingForMore": "さらに多くのモデルが <1>計画されています</1>。お楽しみに ✨",
+    "zeroone": {
       "title": "01.AI 零一万物",
       "token": {
-        "desc": "填入来自 01.AI 零一万物的 API Key",
-        "placeholder": "01.AI 零一万物 API Key",
-        "title": "API Key"
+        "desc": "01.AI 零一万物から取得した API キーを入力してください",
+        "placeholder": "01.AI 零一万物 API キー",
+        "title": "API キー"
       }
     },
-    "Zhipu": {
+    "zhipu": {
       "title": "智谱",
       "token": {
-        "desc": "智谱から取得したAPIキーを入力",
-        "placeholder": "Zhipu API Key",
-        "title": "APIキー"
+        "desc": "智谱から取得した API キーを入力してください",
+        "placeholder": "Zhipu API キー",
+        "title": "API キー"
       }
-    },
-    "checker": {
-      "button": "チェック",
-      "desc": "APIキーとプロキシアドレスが正しく記入されているかをテスト",
-      "pass": "チェック合格",
-      "title": "接続性チェック"
-    },
-    "waitingForMore": "さらに多くのモデルが <1>計画されています</1>。お楽しみに ✨"
+    }
   },
   "ollama": {
     "download": {
